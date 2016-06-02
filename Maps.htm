@@ -1,0 +1,99 @@
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!-- Balise meta définissant la zone affichable -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+		<!--  viewport précise au navigateur le comportement qu'il doit adopter pour afficher une page -->
+		<!--  initial-scale=1.0 : Ouverture de la page avec une échelle à 100 % -->
+		<!--  user-scalable=yes : Zoom possible de la part de l'utilisateur -->
+
+		<style type="text/css">
+		
+			html, body, #maCarte {
+				margin: 0;
+				padding: 0;
+				height: 80%;
+			}
+
+		</style>
+
+		<!-- Titre du script HTML -->
+		<title>MA PREMIERE CARTE</title>
+
+		<!-- Appel de l'API Google Map -->
+		<!-- NB : sensor=false signifie que l'application ne propose pas de repérage GPS -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+		<script type="text/javascript">
+		
+			/* Fonction d'initialisation de la carte */
+			function initialiserCarte() {
+
+				/* Test pour savoir si le navigateur supporte l'API de géolocalisation  */
+				if (!navigator.geolocation) {
+					alert("Votre navigateur ne gère pas la géolocalisation");
+					return false
+				}
+				//var maLatLng = {lat: 48.0833, lng:  -1.6833};  // RENNES
+			//	var maLatLng1 = {lat: 48.650002, lng:  -2.01667};   // SAINT-MALO
+				var maLatLng1 = {lat: 48.86, lng:  2.35};   // PARIS
+				/* Options de la carte */
+				var optionsGoogleMap = {
+					/* Facteur de zoom */
+					zoom : 8,
+					/* Point de centrage */
+					center : maLatLng1,
+					/* Mode d'affichage de la carte (vue carte routière )*/
+					/* NB : google.maps.mapTypeId.ROADMAP   -> Affichage en mode Plan */
+					/*      google.maps.mapTypeId.SATELLITE -> Affichage en mode Satellite */
+					/*      google.maps.mapTypeId.HYBRID    -> Affichage en mode Mixte (Plan/Satellite) */
+					/*      google.maps.mapTypeId.TERRAIN   -> Affichage en mode Relief */
+					mapTypeId : google.maps.MapTypeId.ROADMAP
+				}
+
+				/* Mise en place de la carte dans la division maCarte */
+				var maCarte = new google.maps.Map(document.getElementById("maCarte"), optionsGoogleMap);
+				
+				var marqueurRennes = new google.maps.Marker({    // Positionnement d'un marqueur sur la ville
+					position : maLatLng1,
+					map : maCarte,
+					title : "Rennes, principale ville de Bretagne"
+				});
+				
+								
+				/* Texte explicatif pour la ville de Rennes */
+				var commentairesRennes = "<div>" + "<h1>Rennes</h1>" + "Rennes est une commune française, chef-lieu du département d’Ille-et-Vilaine<br>" + "et de la région Bretagne, ainsi que l'une des capitales historiques du duché de Bretagne.<br />" + "</div>";
+
+				/* Constructeur de la fenêtre explicative associée à la ville de Rennes */
+				var fenetreRennes = new google.maps.InfoWindow({
+					content : commentairesRennes
+				});
+				
+				google.maps.event.addListener(marqueurRennes, "click", function() {
+					fenetreRennes.open(maCarte, marqueurRennes);
+				});
+				
+			}
+		
+		</script>
+
+	</head>
+
+	   <body onload="initialiserCarte()">
+	
+		<h1>Géolocalisation sur carte</h1>
+	
+		<div id="maCarte" style="width:100%; height:100%"></div>
+
+		<br />
+		<br />
+		<br />
+		<center>
+			<a href="JavaScript:window.location='view-source:' + window.location"> Code source </a>
+		</center>
+
+	</body>
+
+</html>

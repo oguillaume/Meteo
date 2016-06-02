@@ -1,0 +1,63 @@
+{"releve":[ 
+     {
+		"Pression":1019.44,
+		"Temp_int":20.44,
+		"Hum_int":41.00,
+		"Temp_ext":2.05,
+		"Vitesse":5,
+		"Direction":164,
+		"Hum_ext":0.00,
+		"H_eau":0,
+		"UV":0,
+		"Soleil":11,
+		"Date":"21-01-2016 09:01:36"
+	},
+	{
+		"Pression":1019.44,
+		"Temp_int":20.44,
+		"Hum_int":41.00,
+		"Temp_ext":2.05,
+		"Vitesse":14,
+		"Direction":141,
+		"Hum_ext":0.00,
+		"H_eau":0,
+		"UV":0,
+		"Soleil":14,
+		"Date":"21-01-2016 09:06:59"
+	 },
+	 { 
+		"Pression":1019.44,
+		"Temp_int":21,
+		"Hum_int":41.00,
+		"Temp_ext":2.05,
+		"Vitesse":10,
+		"Direction":140,
+		"Hum_ext":0.00,
+		"H_eau":0,
+		"UV":0,
+		"Soleil":12,
+		"Date":"21-01-2016 09:12:22"
+	 },
+	 {
+		"Pression":1019.44,
+		"Temp_int":21,
+		"Hum_int":41.00,
+		"Temp_ext":2.05,
+		"Vitesse":10,
+		"Direction":140,
+		"Hum_ext":0.00,
+		"H_eau":0,
+		"UV":0,
+		"Soleil":12,
+		"Date":"21-01-2016 09:17:46"
+	 }
+	          ]
+	       
+}
+
+
+
+
+
+
+

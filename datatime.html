@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>datatime</title>
+
+  
+</head><body>
+<table style="height: 67px; width: 1018px; background-color: rgb(51, 255, 51);" border="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 70px; text-align: center;"><a href="accueil.html"><img onclick="accueil.html" style="border: 2px solid ; width: 50px; height: 40px;" alt="Accueil" title="Accueil" src="images/TN-phare.jpg" hspace="10" vspace="1"></a><a href="datatime.html"><strong style="font-family: Times New Roman,Times,serif; color: rgb(255, 102, 102);"></strong></a></td>
+      <td style="text-align: center; width: 70px;"><a href="configurer.html"><img onclick="configurer.html" style="border: 0px solid ; width: 50px; height: 40px;" alt="Configurer" title="Configurer" src="images/TN-scie.jpg" hspace="10" vspace="10"></a><a href="datatime.html"><span style="font-weight: bold; color: rgb(255, 102, 102);"></span><br>
+      </a> </td>
+      <td style="width: 70px; text-align: center;"><a href="file:///C:/wamp/www/php/TD-meteo/datatime.html"><img onclick="datatime.html" style="border: 2px solid ; width: 50px; height: 40px;" alt="Données temps réel" title="Données temps réel" src="images/TN-plume.jpg" hspace="10" vspace="10"></a><a href="datatim.html"><span style="color: rgb(255, 102, 102); font-weight: bold;"></span></a> </td>
+      <td style="width: 70px; text-align: center; color: rgb(255, 102, 102); font-weight: bold;"><a href="graphique.html"><img style="border: 2px solid ; width: 50px; height: 40px;" alt="Graphiques" title="Graphiques" src="images/TN-toile.jpg" hspace="10" vspace="10"></a><br>
+      </td>
+      <td style="width: 74px; text-align: center;"><a href="aide.html"><img style="border: 2px solid ; width: 50px; height: 40px;" alt="Aide" title="Aide" src="images/TN-classeur.jpg" hspace="10" vspace="10"></a><span style="font-weight: bold; color: rgb(255, 102, 102);"></span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: center;"><strong style="font-family: Times New Roman,Times,serif; color: rgb(255, 102, 102);"><big style="font-weight: bold;">Accueil</big></strong></td>
+      <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold; color: rgb(255, 102, 102);">Configurer</span></td>
+      <td style="vertical-align: top; text-align: center;"><span style="color: rgb(255, 102, 102); font-weight: bold;">Données
+temps réel</span></td>
+      <td style="vertical-align: top; font-weight: bold; color: rgb(255, 102, 102); text-align: center;">Graphiques</td>
+      <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold; color: rgb(255, 102, 102);">Aide</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="datatim.html"><br>
+</a> <br>
+
+<br>
+
+<table style="text-align: left; width: 825px; height: 148px; background-color: rgb(255, 204, 102);" border="1" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 199px; font-weight: bold;"><big>Date
+      </big></td>
+      <td id="date" style="vertical-align: top; width: 87px;"><br>
+      </td>
+      <td  style="vertical-align: top; width: 254px; font-weight: bold;"><big>Pression atmosphérique<br>
+      </big></td>
+      <td id="pression" style="vertical-align: top; width: 79px;"><br>
+      </td>
+      <td colspan="1" rowspan="5" style="vertical-align: top;"><img style="width: 191px; height: 143px;" alt="plage de Perros" src="../Meteo/img/030.JPG"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 199px; font-weight: bold;"><big>Humidité intérieure </big></td>
+      <td id="hum_in" style="vertical-align: top; width: 87px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 254px; font-weight: bold;"><big>Humidité extérieure<br>
+      </big></td>
+      <td id="hum_out" style="vertical-align: top; width: 79px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 199px; font-weight: bold;"><big>Température intérieure </big></td>
+      <td id="temp_in" style="vertical-align: top; width: 87px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 254px; font-weight: bold;"><big>Température extérieure<br>
+      </big></td>
+      <td id="temp_out" style="vertical-align: top; width: 79px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 199px; font-weight: bold;"><big>Vitesse du vent </big></td>
+      <td id="vit_vent" style="vertical-align: top; width: 87px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 254px; font-weight: bold;"><big>Sens du vent<br>
+      </big></td>
+      <td id="dir_vent" style="vertical-align: top; width: 79px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 199px; font-weight: bold;"><big>Facteur UV </big></td>
+      <td id="uv" style="vertical-align: top; width: 87px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 254px; font-weight: bold;"><big>Taux de radiations solaires<br>
+      </big></td>
+      <td id="rad" style="vertical-align: top; width: 79px;"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<input type="button" value="Actualiser" onclick="getReleves()" />
+<script type="text/javascript"> 
+function getReleves()
+  { 
+    var Releve = new XMLHttpRequest();
+     Releve.open('GET','releves.json',false);
+     Releve.send(null);alert(Releve.responseText);
+     var relevem= JSON.parse(Releve.responseText);
+	 /*alert(Releve.responseText); */
+     document.getElementById("pression").innerHTML=relevem.releve[1].Pression;
+	 document.getElementById("date").innerHTML=relevem.releve[1].Date;
+	 document.getElementById("hum_in").innerHTML=relevem.releve[1].Hum_int;
+	 document.getElementById("hum_out").innerHTML=relevem.releve[1].Hum_ext;
+	 document.getElementById("temp_in").innerHTML=relevem.releve[1].Temp_int;
+	 document.getElementById("temp_out").innerHTML=relevem.releve[1].Temp_ext;
+	 document.getElementById("rad").innerHTML=relevem.releve[1].Soleil;
+	 document.getElementById("dir_vent").innerHTML=relevem.releve[1].Direction;
+	 document.getElementById("vit_vent").innerHTML=relevem.releve[1].Vitesse;
+	 document.getElementById("uv").innerHTML=relevem.releve[1].UV;
+
+
+   
+  } </script>
+</body></html>

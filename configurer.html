@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>configurer.html</title></head><body>
+<table style="height: 67px; width: 1018px; background-color: rgb(51, 255, 51);" border="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 70px; text-align: center;"><a href="accueil.html"><img onclick="accueil.html" style="border: 2px solid ; width: 50px; height: 40px;" alt="Accueil" title="Accueil" src="images/TN-phare.jpg" hspace="10" vspace="1"></a><a href="datatime.html"><strong style="font-family: Times New Roman,Times,serif; color: rgb(255, 102, 102);"></strong></a></td>
+      <td style="text-align: center; width: 70px;"><a href="configurer.html"><img onclick="configurer.html" style="border: 0px solid ; width: 50px; height: 40px;" alt="Configurer" title="Configurer" src="images/TN-scie.jpg" hspace="10" vspace="10"></a><a href="datatim.html"><span style="font-weight: bold; color: rgb(255, 102, 102);"></span><br>
+      </a> </td>
+      <td style="width: 70px; text-align: center;"><a href="datatime.html"><img onclick="datatime.html" style="border: 2px solid ; width: 50px; height: 40px;" alt="Données temps réel" title="Données temps réel" src="images/TN-plume.jpg" hspace="10" vspace="10"></a><a href="datatim.html"><span style="color: rgb(255, 102, 102); font-weight: bold;"></span></a> </td>
+      <td style="width: 70px; text-align: center; color: rgb(255, 102, 102); font-weight: bold;"><a href="graphique.html"><img style="border: 2px solid ; width: 50px; height: 40px;" alt="Graphiques" title="Graphiques" src="images/TN-toile.jpg" hspace="10" vspace="10"></a><br>
+      </td>
+      <td style="width: 74px; text-align: center;"><a href="aide.html"><img style="border: 2px solid ; width: 50px; height: 40px;" alt="Aide" title="Aide" src="images/TN-classeur.jpg" hspace="10" vspace="10"></a><span style="font-weight: bold; color: rgb(255, 102, 102);"></span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: center;"><strong style="font-family: Times New Roman,Times,serif; color: rgb(255, 102, 102);"><big style="font-weight: bold;">Accueil</big></strong></td>
+      <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold; color: rgb(255, 102, 102);">Configurer</span></td>
+      <td style="vertical-align: top; text-align: center;"><span style="color: rgb(255, 102, 102); font-weight: bold;">Données
+temps réel</span></td>
+      <td style="vertical-align: top; font-weight: bold; color: rgb(255, 102, 102); text-align: center;">Graphiques</td>
+      <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold; color: rgb(255, 102, 102);">Aide</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<a href="datatime.html"><br>
+</a>
+<br>
+
+<form method="get" action="config.php" name="configuration"><br>
+  <table style="text-align: left; width: 453px; height: 213px; background-color: rgb(51, 255, 255);" border="0" cellpadding="2" cellspacing="0">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; width: 169px; background-color: rgb(51, 255, 255); height: 47px;"><label>DATE
+        </label></td>
+        <td style="vertical-align: top; width: 82px; background-color: rgb(51, 255, 255); height: 47px;">
+        <select size="1" name="Jour">
+        <option selected="selected">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+        </select>
+        </td>
+        <td style="vertical-align: top; width: 117px; height: 47px;">
+        <select size="1" name="Mois">
+        <option selected="selected" value="01">Janvier</option>
+        <option value="02">Février</option>
+        <option value="03">Mars</option>
+        <option value="04">Avril</option>
+        <option value="05">Mai</option>
+        <option value="06">Juin</option>
+        <option value="07">Juillet</option>
+        <option value="08">Aout</option>
+        <option value="09">Septembre</option>
+        <option value="10">Octobre</option>
+        <option value="11">Novembre</option>
+        <option value="12">Decembre</option>
+        </select>
+        </td>
+        <td style="vertical-align: top; width: 49px; height: 47px;">
+        <select size="1" name="Annee">
+        <option value="">2015</option>
+        <option value="">2016</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 169px; height: 42px;"><label>HEURE</label><br>
+        </td>
+        <td style="vertical-align: top; width: 82px; height: 42px;"><input size="2" name="heure" value="00"><br>
+        </td>
+        <td style="vertical-align: top; width: 117px; height: 42px;"><input size="2" name="minute" value="00"><br>
+        </td>
+        <td style="vertical-align: top; width: 49px; height: 42px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 169px; height: 53px;">LATITUDE</td>
+        <td style="vertical-align: top; width: 82px; height: 53px;">
+        <select size="1" name="Rose">
+        <option value="">Sud</option>
+        <option value="">Nord</option>
+        </select>
+        <br>
+        </td>
+        <td style="vertical-align: top; width: 117px; height: 53px;"><input size="8" name="latitude" value="00:00:00"><br>
+        </td>
+        <td style="vertical-align: top; width: 49px; height: 53px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 169px; height: 44px;">LONGITUDE</td>
+        <td style="vertical-align: top; width: 82px; height: 44px;">
+        <select size="1" name="rose2">
+        <option value="">Est</option>
+        <option value="">Ouest</option>
+        </select>
+        <br>
+        </td>
+        <td style="vertical-align: top; width: 117px; height: 44px;"><input size="8" name="longitude" value="00:00:00"><br>
+        </td>
+        <td style="vertical-align: top; width: 49px; height: 44px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 169px; height: 43px;"><button value="submit" name="Valider" style="height: 40px; width: 70px;">Valider</button><br>
+        </td>
+        <td style="vertical-align: top; width: 82px; height: 43px;"><br>
+        </td>
+        <td style="vertical-align: top; width: 117px; height: 43px;"><br>
+        </td>
+        <td style="vertical-align: top; width: 49px; height: 43px;"><br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+</form>
+
+</body></html>
